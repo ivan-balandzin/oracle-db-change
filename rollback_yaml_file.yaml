@@ -3,6 +3,7 @@ databaseChangeLog:
     - runningAs:
         username: liquibase
 
+
   - changeSet:
       id: changeRollback
       author: nvoxland
