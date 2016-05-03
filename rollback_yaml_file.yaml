@@ -1,9 +1,4 @@
 databaseChangeLog:
-  - preConditions:
-    - runningAs:
-        username: liquibase
-
-
   - changeSet:
       id: changeRollback
       author: nvoxland
