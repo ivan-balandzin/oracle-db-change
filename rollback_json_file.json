@@ -1,23 +1,13 @@
 {
     "databaseChangeLog": [
         {
-            "preConditions": [
-                {
-                    "runningAs": {
-                        "username": "liquibase"
-                    }
-                }
-            ]
-        },
-
-        {
             "changeSet": {
                 "id": "changeRollback",
                 "author": "nvoxland",
                 "changes": [
                     {
                         "createTable": {
-                            "tableName": "changeRollback_test13",
+                            "tableName": "changeRollback_test14",
                             "columns": [
                                 {
                                     "column": {
