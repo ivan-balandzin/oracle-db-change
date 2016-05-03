@@ -1,0 +1,14 @@
+changeSet:
+  id: createTable-example
+  author: liquibase-docs
+  changes:
+  - createTable:
+      catalogName: cat
+      columns:
+      - column:
+          name: address
+          type: varchar(255)
+      remarks: Test comment
+      schemaName: public
+      tableName: person
+      tablespace: Test string insertion
