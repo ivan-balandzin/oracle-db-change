@@ -16,7 +16,7 @@
             </column>
             <column name="state" type="varchar(50)"/>
         </createTable>
-	<insert tableName="test1">
+	<insert tableName="a-test1">
 	    <column name="id" value="1"/>
     	    <column name="firstname" value ="test"/>
 	    <column name="lastname" value="user"/>
