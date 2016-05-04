@@ -1,19 +1,30 @@
 <databaseChangeLog
-    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
-    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-
-    <changeSet id="changeRollback" author="nvoxland">
-        <createTable tableName="changeRollback_test17">
-            <column name="id" type="int"/>
+    <changeSet id="changeset_id" author="git_commiter">
+        <createTable tableName="test1">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="firstname" type="varchar(50)"/>
+            <column name="lastname" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="varchar(50)"/>
         </createTable>
+	<insert tableName="test1">
+	    <column name="id" value="1"/>
+    	    <column name="firstname" value ="test"/>
+	    <column name="lastname" value="user"/>
+	    <column name="state" value="active"/>
+	</insert>
         <rollback>
-            <dropTable tableName="changeRollback_test17"/>
+            <dropTable tableName="test1"/>
         </rollback>
-
     </changeSet>
 
 </databaseChangeLog>
