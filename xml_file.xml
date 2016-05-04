@@ -25,7 +25,5 @@
 	<rollback>
         	<dropTable tableName="a-test2"/>
         </rollback>
-	    
     </changeSet>
-
 </databaseChangeLog>
