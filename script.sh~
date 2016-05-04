@@ -25,19 +25,18 @@ elif [ "$xml_file" == "$latest_file" ]
 then
 	echo "XML format file has latest changes"
 	sed -i  "s/<changeSet id.*/<changeSet id=\"${BUILD_NUMBER}\" author=\"$author\">/" dist/$latest_file
-
-#for YAML changesets
+#for JSON changesets
 elif [ "$yaml_file" == "$latest_file" ]
 then
 	echo "YAML format file has latest changes"
-	sed -i "s/id:.*/id: ${BUILD_NUMBER}/" dist/$latest_file
-	sed -i "s/author:.*/author: $author/" dist/$latest_file
-#for JSON changesets
+	sed -i "s/\"id\":.*/\"id\": \"${BUILD_NUMBER}\",/" dist/$latest_file
+	sed -i "s/\"author\":*/\"author\": \"$author\",/" dist/$latest_file
+#for YAML changesets
 elif [ "$json_file" == "$latest_file" ]
 then
 	echo "JSON format file has latest changes"
-	sed -i "s/\"id\":.*/\"id\": \"${BUILD_NUMBER}\",/" dist/$latest_file
-	sed -i "s/\"author\":*/\"author\": \"$author\",/" dist/$latest_file
+	sed -i "s/id:.*/id: ${BUILD_NUMBER}/" dist/$latest_file
+	sed -i "s/author:.*/author: $author/" dist/$latest_file
 fi
 
 
