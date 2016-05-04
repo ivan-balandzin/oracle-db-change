@@ -14,7 +14,7 @@
             <column name="lastname" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="state" type="varchar(50)"/>
+            <column name="state" type="char(2)"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>
