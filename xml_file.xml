@@ -6,7 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <changeSet id="changeset_id" author="git_commiter">
-        <createTable tableName="a-test1">
+        <createTable tableName="a-test2">
             <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
@@ -16,7 +16,7 @@
             </column>
             <column name="state" type="varchar(50)"/>
         </createTable>
-	    <insert tableName="a-test1">
+	    <insert tableName="a-test2">
             <column name="id" value="1"/>
             <column name="firstname" value ="test"/>
             <column name="lastname" value="user"/>
