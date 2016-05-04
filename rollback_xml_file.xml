@@ -17,4 +17,5 @@
             <column name="state" type="char(2)"/>
         </createTable>
     </changeSet>
+    
 </databaseChangeLog>
