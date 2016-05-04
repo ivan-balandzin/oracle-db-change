@@ -16,18 +16,6 @@
             </column>
             <column name="state" type="varchar(50)"/>
         </createTable>
-	<insert tableName="a-test1">
-	    <column name="id" value="1"/>
-    	    <column name="firstname" value ="test1"/>
-	    <column name="lastname" value="user"/>
-	    <column name="state" value="active"/>
-	</insert>
-	<insert tableName="a-test1">
-	    <column name="id" value="2"/>
-    	    <column name="firstname" value ="test2"/>
-	    <column name="lastname" value="user"/>
-	    <column name="state" value="passive"/>
-	</insert>
     </changeSet>
 
 </databaseChangeLog>
