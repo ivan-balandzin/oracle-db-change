@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 latest_file=`ls -t * | egrep "(.*\.xml|.*\.sql|.*\.yaml|.*\.json)"|head -1`
 mkdir -p dist
