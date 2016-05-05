@@ -11,7 +11,7 @@
         <column name="name" value="Morgan Freeman"/>
     </insert>
     <rollback> 
-      DELETE FROM Person WHERE name LIKE 'John Doe'; 
+      DELETE FROM Person WHERE name LIKE 'Morgan Freeman'; 
     </rollback>
   </changeSet>
   
