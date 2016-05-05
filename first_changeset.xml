@@ -5,16 +5,15 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-  <changeSet id="1" author="mueller@synyx.de" runonchange="true"> 
-    <createTable tableName="Person"> 
-      <column autoIncrement="true" name="id" type="BIGINT"> 
-        <constraints primaryKey="true" nullable="false"/> 
-      </column> 
-      <column name="name" type="VARCHAR(255)"> 
-        <constraints nullable="false"> 
-        </constraints>
-      </column> 
-    </createTable> 
+  <changeSet id="1" author="mueller@synyx.de" runonchange="true">
+    <createTable tableName="Person">
+      <column autoIncrement="true" name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="name" type="VARCHAR(255)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
   </changeSet>
   
 </databaseChangeLog>
