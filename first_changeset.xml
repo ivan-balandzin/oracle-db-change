@@ -8,8 +8,7 @@
   <changeSet id="1" author="mueller@synyx.de" runonchange="true"> 
     <createTable tableName="Person"> 
       <column autoIncrement="true" name="id" type="BIGINT"> 
-        <constraints nullable="false" primaryKey="true"> 
-        </constraints>
+        <constraints primaryKey="true" nullable="false"/> 
       </column> 
       <column name="name" type="VARCHAR(255)"> 
         <constraints nullable="false"> 
