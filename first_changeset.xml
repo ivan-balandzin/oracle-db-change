@@ -5,8 +5,8 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-  <changeset id="1" author="mueller@synyx.de" runonchange="true"> 
-    <createtable tablename="Person"> 
+  <changeSet id="1" author="mueller@synyx.de" runonchange="true"> 
+    <createTable tablename="Person"> 
       <column autoincrement="true" name="id" type="BIGINT"> 
         <constraints nullable="false" primarykey="true"> 
         </constraints>
@@ -15,7 +15,7 @@
         <constraints nullable="false"> 
         </constraints>
       </column> 
-    </createtable> 
-  </changeset>
+    </createTable> 
+  </changeSet>
   
 </databaseChangeLog>
