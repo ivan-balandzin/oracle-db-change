@@ -7,7 +7,7 @@
 
   <changeSet id="init-1" author="mueller@synyx.de"> 
     <insert tableName="Person">
-        <column name="id" value="1"/>
+        <column name="id" value="2"/>
         <column name="name" value="John Doe"/>
     </insert>
     <rollback> 
