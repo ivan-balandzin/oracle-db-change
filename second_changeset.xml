@@ -15,5 +15,4 @@
     </rollback>
   </changeSet>
   
-  
 </databaseChangeLog>
