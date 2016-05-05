@@ -6,9 +6,9 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet id="1" author="mueller@synyx.de" runonchange="true"> 
-    <createTable tablename="Person"> 
-      <column autoincrement="true" name="id" type="BIGINT"> 
-        <constraints nullable="false" primarykey="true"> 
+    <createTable tableName="Person"> 
+      <column autoIncrement="true" name="id" type="BIGINT"> 
+        <constraints nullable="false" primaryKey="true"> 
         </constraints>
       </column> 
       <column name="name" type="VARCHAR(255)"> 
