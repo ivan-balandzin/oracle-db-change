@@ -6,7 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet id="1" author="mueller@synyx.de">
-    <createTable tableName="a-Person1">
+    <createTable tableName="a-Person">
       <column autoIncrement="true" name="id" type="BIGINT">
         <constraints primaryKey="true" nullable="false"/>
       </column>
