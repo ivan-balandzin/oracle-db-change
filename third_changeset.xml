@@ -9,7 +9,6 @@
     <insert tableName="a-Person">
         <column name="id" value="2"/>
         <column name="name" value="Morgan Freeman"/>
-        <tagDatabase tag="version_1.3"/>
     </insert>
     <rollback> 
       DELETE FROM Person WHERE name LIKE 'Morgan Freeman'; 
