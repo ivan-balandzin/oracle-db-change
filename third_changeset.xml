@@ -14,5 +14,5 @@
       DELETE FROM Person WHERE name LIKE 'Morgan Freeman'; 
     </rollback>
   </changeSet>
-
+  
 </databaseChangeLog>
