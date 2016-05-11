@@ -14,5 +14,5 @@
       DELETE FROM a-Person WHERE NAME='John Doe'; 
     </rollback>
   </changeSet>
-
+  
 </databaseChangeLog>
