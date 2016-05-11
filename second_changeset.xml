@@ -14,5 +14,5 @@
       DELETE FROM a-Person WHERE name LIKE 'John Doe'; 
     </rollback>
   </changeSet>
-  
+
 </databaseChangeLog>
