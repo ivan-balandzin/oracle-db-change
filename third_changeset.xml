@@ -6,12 +6,12 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet id="init-1" author="mueller@synyx.de"> 
-    <insert tableName="a-Person1">
+    <insert tableName="a-Person">
         <column name="id" value="2"/>
         <column name="name" value="Morgan Freeman"/>
     </insert>
     <rollback> 
-      DELETE FROM "a-Person1" WHERE NAME='Morgan Freeman'; 
+      DELETE FROM "a-Person" WHERE NAME='Morgan Freeman'; 
     </rollback>
   </changeSet>
   
