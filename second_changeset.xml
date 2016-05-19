@@ -14,5 +14,5 @@
       DELETE FROM "PERSONS" WHERE NAME='John Doe'; 
     </rollback>
   </changeSet>
-
+  
 </databaseChangeLog>
