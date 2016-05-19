@@ -14,5 +14,5 @@
       DELETE FROM "PERSONS" WHERE NAME='Morgan Freeman'; 
     </rollback>
   </changeSet>
-  
+
 </databaseChangeLog>
