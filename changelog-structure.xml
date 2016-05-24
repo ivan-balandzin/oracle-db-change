@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="root (generated)" id="1464075020561-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="PERSONS">
+            <column name="ID" type="NUMBER(38, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="NAME" type="VARCHAR2(255 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1464075020561-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="TABLE1">
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1464075020561-3" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createIndex indexName="PK_PERSONS" tableName="PERSONS" unique="true">
+            <column name="ID"/>
+        </createIndex>
+        <addPrimaryKey columnNames="ID" constraintName="PK_PERSONS" forIndexName="PK_PERSONS" tableName="PERSONS"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1464075020561-4">
+        <dropTable tableName="TABLE2"/>
+    </changeSet>
+</databaseChangeLog>
